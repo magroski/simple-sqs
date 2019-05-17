@@ -1,6 +1,6 @@
 {
     "name": "magroski/simple-sqs",
-    "description": "A simple interface to send messages to Amazon SQS",
+    "description": "A simple client to send messages to Amazon SQS",
     "type": "library",
     "keywords": [
         "Queue",

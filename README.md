@@ -10,4 +10,15 @@ This library provides a quick and simple way to send messages to Amazon SQS.
 ## Usage examples
 
 ```php
+$config = new Config('access_key', 'secret_key', 'ue-east-1', 'https://sqs.queue.url');
+
+$client = new Client($config);
+
+$data = json_encode(['book' => 1]);
+
+# Real-time
+$client->sendMessage($data);
+
+# With 1 minute delay
+$client->sendDelayedMessage($data, 60);
 ```
